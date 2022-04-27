@@ -5,7 +5,7 @@ const DIST_PATH = path.resolve(PROJECT_ROOT, 'dist');
 const SRC_PATH = path.resolve(PROJECT_ROOT, 'src');
 
 module.exports = {
-  entry: path.resolve(SRC_PATH, 'index.jsx'),
+  entry: path.resolve(SRC_PATH, 'index.tsx'),
   output: {
     path: DIST_PATH,
     filename: '[name].js',
@@ -15,20 +15,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ts|js)x?$/,
-        include: path.resolve('src'),
-
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        test: /\.tsx?$/,
+        use: 'ts-loader',
       },
-    ],
+    ]
   },
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
     alias: {
-      '@src': SRC_PATH,
+      '@': SRC_PATH,
     },
     modules: ['node_modules'],
   },
