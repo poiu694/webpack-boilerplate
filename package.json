@@ -8,8 +8,9 @@
   "scripts": {
     "start": "webpack serve --config ./webpack/webpack.dev.js",
     "build-dev": "webpack --config ./webpack/webpack.dev.js",
-    "lint:code": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "lint:code-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src"
+    "prettier-fix": "prettier --write",
+    "lint:code-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint:code": "eslint --ext .js,.jsx,.ts,.tsx src"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -29,6 +30,8 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "ts-loader": "^9.2.9",
     "webpack": "^5.72.0",
@@ -40,6 +43,17 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typescript": "^4.6.3"
+  },
+  "lint-staged": {
+    "*.json": [
+      "yarn prettier:code-fix"
+    ],
+    ".rc": [
+      "yarn prettier:code-fix"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint:code-fix --cache"
+    ]
   },
   "engines": {
     "node": "^16.15.0",
