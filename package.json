@@ -8,12 +8,16 @@
   "scripts": {
     "start": "webpack serve --config ./webpack/webpack.dev.js",
     "build-dev": "webpack --config ./webpack/webpack.dev.js",
-    "prettier-fix": "prettier --write",
+    "prettier:code-fix": "prettier --write",
     "lint:code-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx",
-    "lint:code": "eslint --ext .js,.jsx,.ts,.tsx src"
+    "lint:code": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:style": "stylelint **/*.(ts|tsx)",
+    "lint:style-fix": "stylelint **/*.(ts|tsx) --fix",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
+    "@stylelint/postcss-css-in-js": "^0.37.3",
     "@types/node": "^17.0.29",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
@@ -32,7 +36,16 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
+    "postcss": "^8.4.13",
+    "postcss-syntax": "^0.36.2",
     "prettier": "^2.6.2",
+    "stylelint": "^14.8.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "ts-loader": "^9.2.9",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
@@ -52,7 +65,8 @@
       "yarn prettier:code-fix"
     ],
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint:code-fix --cache"
+      "yarn lint:code-fix --cache",
+      "yarn lint:style-fix"
     ]
   },
   "engines": {
