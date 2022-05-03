@@ -24,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "babel-loader": "^8.2.5",
+    "emotion-ts-plugin": "^2.0.1",
     "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -53,6 +54,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typescript": "^4.6.3"
