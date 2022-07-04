@@ -3,12 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb-typescript",
-    "prettier",
-    "plugin:import/recommended"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb-typescript", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -16,15 +11,16 @@
     },
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "./tsconfig.json"
+    "project": ["./tsconfig.json"]
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": ["error"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": "off",
     "react/function-component-definition": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
