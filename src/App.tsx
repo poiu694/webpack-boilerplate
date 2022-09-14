@@ -2,13 +2,13 @@ import React, { Suspense } from 'react';
 import { Global, ThemeProvider } from '@emotion/react';
 
 import Test from '@/components/Test';
-import { resetCss, theme } from '@/styles';
+import { theme, globalStyle } from '@/styles';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Suspense fallback={null}>
-        <Global styles={resetCss} />
+        <Global styles={globalStyle} />
         <h3>Hello World</h3>
         <div>Hi MY friends</div>
         <Test />
