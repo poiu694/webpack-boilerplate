@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:5.21.0"],\
             ["@typescript-eslint/parser", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:5.21.0"],\
             ["babel-loader", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:8.2.5"],\
+            ["emotion-reset", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:3.0.1"],\
             ["emotion-ts-plugin", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:2.0.1"],\
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-airbnb", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:19.0.4"],\
@@ -3602,6 +3603,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/emojis-list-npm-3.0.0-7faa48e6fd-ddaaa02542.zip/node_modules/emojis-list/",\
           "packageDependencies": [\
             ["emojis-list", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["emotion-reset", [\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/emotion-reset-npm-3.0.1-061e1e27b7-788cfbf6f3.zip/node_modules/emotion-reset/",\
+          "packageDependencies": [\
+            ["emotion-reset", "npm:3.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:3.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/emotion-reset-virtual-2fe791af08/0/cache/emotion-reset-npm-3.0.1-061e1e27b7-788cfbf6f3.zip/node_modules/emotion-reset/",\
+          "packageDependencies": [\
+            ["emotion-reset", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:3.0.1"],\
+            ["@emotion/react", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:11.9.0"],\
+            ["@types/emotion__react", null]\
+          ],\
+          "packagePeers": [\
+            "@emotion/react",\
+            "@types/emotion__react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10888,6 +10911,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:5.21.0"],\
             ["@typescript-eslint/parser", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:5.21.0"],\
             ["babel-loader", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:8.2.5"],\
+            ["emotion-reset", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:3.0.1"],\
             ["emotion-ts-plugin", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:2.0.1"],\
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-airbnb", "virtual:2f4410d9347dd4913b51bda0069ba13a323946c7aacd0c05ea78108ab1ad2cb3cb42b8365fe4b2c8bbb65652e6d907d3d52549ca31871a629fd1f8c324eabd34#npm:19.0.4"],\
